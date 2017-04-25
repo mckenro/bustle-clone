@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('contact');
   this.route('about');
   this.route('admin');
+  this.route('article', {path: '/article/:story_id'});
 });
 
 export default Router;
