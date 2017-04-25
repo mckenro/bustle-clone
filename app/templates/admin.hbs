@@ -1,0 +1,8 @@
+<h1>Admin Panel</h1>
+
+  {{new-story saveStory="saveStory"}}
+
+  {{#each model as |story|}}
+    {{admin-tile story=story destroyStory="destroyStory"}}
+    {{update-story story=story update="update"}}
+  {{/each}}
