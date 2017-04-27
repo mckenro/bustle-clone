@@ -2,7 +2,6 @@
   <h4>Update {{story.title}}</h4>
   <div class="new-story">
     <form>
-
       <div class="form-group">
         <label for="title">Story Title</label>
         {{input value=title id="new_title" placeholder=story.title}}
@@ -38,9 +37,9 @@
         {{input value=category id="new_category" placeholder=story.category}}
       </div>
 
-      <button {{action 'update' story}}>Save</button>
+      <button class="btn btn-success" {{action 'update' story}}>Save</button>
     </form>
   </div>
 {{else}}
-  <button {{action 'updateStoryForm'}}>Update Story</button>
+  <button class="btn btn-default" {{action 'updateStoryForm'}}>Update</button>
 {{/if}}

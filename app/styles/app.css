@@ -1,0 +1,55 @@
+h2, h3, h4, h5, h6 {
+  font-weight: 200;
+}
+
+body {
+  background: #f9f9f9;
+}
+
+div.admin img {
+  width: 100px;
+  height: 70px;
+  margin: 5%;
+}
+
+div.admin div.update {
+  float: right;
+  margin-top: -12%;
+  margin-right: 4%;
+}
+
+div.panel-body {
+  float: right;
+  margin-top: 3%;
+  margin-right: 20%;
+}
+
+div.update {
+  background-color: #EEF0F1;
+}
+
+.panel-image img{
+  width: 200px;
+  border-radius: 6px;
+}
+
+.panel-heading {
+  height: 50px;
+}
+
+.panel-heading h3 {
+  margin-top: 3px;
+}
+
+.panel {
+  margin-top: 30px;
+}
+
+.panel-heading a{
+  color: white;
+}
+
+.new-story {
+  background: #EEF0F1;
+  padding: 12px;
+}

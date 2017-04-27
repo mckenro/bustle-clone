@@ -1,8 +1,19 @@
 <h1>Admin Panel</h1>
 
-  {{new-story saveStory="saveStory"}}
+{{new-story saveStory="saveStory"}}
 
+<div class="row admin">
   {{#each model as |story|}}
-    {{admin-tile story=story destroyStory="destroyStory"}}
-    {{update-story story=story update="update"}}
+    <div class="col-md-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3>{{#link-to 'article' story.id}}{{story.title}}{{/link-to}}</h3>
+        </div>
+        {{admin-tile story=story destroyStory="destroyStory"}}
+        <div class="update">
+          {{update-story story=story update="update"}}
+        </div>
+      </div>
+    </div>
   {{/each}}
+</div>

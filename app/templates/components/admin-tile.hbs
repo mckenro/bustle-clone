@@ -1,4 +1,10 @@
-<h3>{{story.title}}</h3>
-<p>{{story.author}}</p>
-<p>{{story.date}}</p>
-<button {{action 'delete' story}}>Delete Story</button>
+<div class="panel-body">
+  <p><strong>Author:</strong> {{story.author}}</p>
+  <p><strong>Date:</strong> {{story.date}}</p>
+</div>
+<div class="panel-image">
+  <img src={{story.image}}>
+</div>
+<div class="panel-footer">
+  <button {{action 'delete' story}} class="btn btn-danger">Delete Story</button>
+</div>
