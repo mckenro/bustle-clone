@@ -22,5 +22,12 @@
     "date": "4/1/17",
     "featured": false,
     "category": "books"
-  }]
+  }],
+  "comments": [{
+    "user": "Bob",
+    "comment": "great story!"
+  }, {
+    "user": "Xing",
+    "comment": "Total garbage!!"
+    }]
 }

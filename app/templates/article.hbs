@@ -1,1 +1,5 @@
 {{article-page story=model}}
+{{new-comment saveComment='saveComment' story=model}}
+{{#each model.comments as |comment|}}
+  <p>{{comment.user}} - {{comment.comment}}</p>
+{{/each}}

@@ -1,4 +1,9 @@
-<h1>Bustle</h1>
-  {{#each model as |story|}}
+<h1>Internet News</h1>
+  {{#each model.stories as |story|}}
     {{story-tile story=story}}
+  {{/each}}
+
+<h2>Comments</h2>
+  {{#each model.comments as |comment|}}
+    <p>{{comment.user}} - {{comment.comment}}</p>
   {{/each}}
